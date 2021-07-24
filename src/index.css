@@ -22,9 +22,15 @@ input {
   align-content: center;
   border: 1px solid grey;
   border-radius:6px;
+  display: inherit;
+  flex-wrap: inherit;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px auto;
+  padding: 10px;
   overflow: hidden;
   max-width: 350px;
+  width: 50%;
 }
 
 .card-text {
@@ -33,6 +39,7 @@ input {
 }
 
 .card-img {
+  display: block;
+  
   max-height: 170px;
-
 }

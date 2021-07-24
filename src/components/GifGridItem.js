@@ -2,12 +2,10 @@ import React from 'react'
 
 const GifGridItem = ({ title, url}) => {
     return (
-        <div className="card">
-            <figure>
-                <img src={ url } alt={ title } className="card-img " />
-                <figcaption>{ title }</figcaption>
-            </figure>
-        </div>
+        <figure className="card">
+            <img src={ url } alt={ title } className="card-img " />
+            <figcaption className="card-text">{ title }</figcaption>
+        </figure>
     )
 }
 
