@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const GifGridItem = ({ title, url}) => {
     return (
@@ -7,6 +8,12 @@ const GifGridItem = ({ title, url}) => {
             <figcaption className="card-text">{ title }</figcaption>
         </figure>
     )
+}
+
+
+GifGridItem.protoTypes = {
+    title: PropTypes.number.isRequired,
+    url: PropTypes.string.isRequired
 }
 
 export default GifGridItem
