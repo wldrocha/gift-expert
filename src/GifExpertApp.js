@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
-import GiftGrid from './components/GiftGrid'
+import GifGrid from './components/GifGrid'
 
 export const GifExpertApp = () => {
     const [categories, setCategories] = useState(['One punch'])
@@ -17,7 +17,7 @@ export const GifExpertApp = () => {
             <ol>
                 {
                     categories.map(category => (
-                        <GiftGrid
+                        <GifGrid
                             key={category}
                             category={category}
                         />

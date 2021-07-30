@@ -2,7 +2,7 @@ import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import GifGridItem from './GifGridItem'
 
-const GiftGrid = ({ category }) => {
+const GifGrid = ({ category }) => {
 
     const { loading, data:images } = useFetchGifs( category )
     
@@ -24,4 +24,4 @@ const GiftGrid = ({ category }) => {
     )
 }
 
-export default GiftGrid
+export default GifGrid
