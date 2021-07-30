@@ -11,8 +11,8 @@ const GifGridItem = ({ title, url}) => {
 }
 
 
-GifGridItem.protoTypes = {
-    title: PropTypes.number.isRequired,
+GifGridItem.propTypes = {
+    title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired
 }
 
